@@ -50,6 +50,11 @@ section {
     cursor: pointer;
     border-radius: 8px;
     margin-bottom: 50px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e6820d;
 }
 
 .grid {
@@ -276,6 +281,12 @@ nav ul li a {
     width: 100%;
     filter: brightness(0);
     opacity: 60%;
+    transition: all 0.3s;
+}
+
+.sponsor-box img:hover {
+    filter: brightness(1);
+    opacity: 100%;
 }
 
 /* Contact Section */
