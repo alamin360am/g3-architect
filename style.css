@@ -225,6 +225,12 @@ nav ul li a {
     padding: 30px;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.fact-box:hover {
+    animation-name: scale;
+    animation-duration: 1s;
 }
 
 .fact-box img {
@@ -243,6 +249,22 @@ nav ul li a {
     color: #727272;
 }
 
+/* Animations */
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.6);
+        background-color: #FF900E;
+        color: #fff;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Responsive */
 
 /* Mobile */
@@ -250,6 +272,14 @@ nav ul li a {
 @media screen and (max-width: 576px) {
     .container {
         padding: 0 10px;
+    }
+
+    .grid-2-col {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-4-col {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .btn-primary {
@@ -281,13 +311,17 @@ nav ul li a {
 
 /* Tablet */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
     .container {
         padding: 0 40px;
     }
 
     .grid-2-col {
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .grid-4-col {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .header-title {
@@ -312,8 +346,11 @@ nav ul li a {
 
 /* Big tablet */
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
     .container {
         padding: 0 60px;
+    }
+    .grid-4-col {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
