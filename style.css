@@ -1,0 +1,319 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* Basic SetUp */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #131313;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+/* Component */
+
+.container {
+    padding: 0 160px;
+    padding-bottom: 40px;
+}
+
+.description {
+    color: #727272;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.btn-primary {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    color: #fff;
+    background-color: #FF900E;
+    margin: 0 auto;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-2-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+nav .logo {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #131313;
+}
+
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header-info .description {
+    text-align: center;
+}
+
+.header-banner img {
+    width: 100%;
+}
+
+/* Feature Quick list Section */
+
+.feature-container {
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+}
+
+.img-gallery {
+    gap: 24px;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.gray-color {
+    color: #727272;
+}
+
+.yellow-color {
+    color: #FF900E;
+}
+
+/* Feature list */
+
+.feature {
+    position: relative;
+}
+
+.feature-list-container {
+    gap: 80px;
+}
+
+.feature-heading {
+    font-size: 36px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.feature-heading::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 80%;
+    background-color: #FF900E;
+}
+
+.feature-box {
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature-box .description {
+    margin-bottom: 0;
+}
+
+.feature-img-box img {
+    height: 90%;
+    width: 100%;
+}
+
+.feature-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+}
+
+.btn-primary span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* Fact */
+
+.section-fact .description {
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.facts {
+    gap: 40px;
+}
+
+.fact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+
+.fact-box img {
+    margin-bottom: 10px;
+}
+
+.fact-box .number {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fact-box .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #727272;
+}
+
+/* Responsive */
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+    }
+
+    .header-title {
+        font-size: 48px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .logo {
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .grid-2-col {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-title {
+        font-size: 52px;
+    }
+
+    nav .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+    .feature-btn {
+        bottom: -70px;
+    }
+}
+
+/* Big tablet */
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 60px;
+    }
+}
