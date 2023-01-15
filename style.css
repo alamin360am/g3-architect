@@ -278,6 +278,43 @@ nav ul li a {
     opacity: 60%;
 }
 
+/* Contact Section */
+
+form {
+    background-color: #FFF4E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+form .btn-primary {
+    margin-bottom: 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+    outline: none;
+    border: 0;
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #FFF4E7;
+    padding: 40px 0;
+    margin: 0 160px 60px 160px;
+}
+
+footer p {
+    text-align: center;
+}
+
 /* Animations */
 
 @keyframes scale {
@@ -332,6 +369,18 @@ nav ul li a {
     nav .logo {
         margin-bottom: 10px;
     }
+
+    form {
+        padding: 20px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 90%;
+    }
+
+    footer {
+        margin: 0;
+    }
 }
 
 /* Tablet */
@@ -367,6 +416,18 @@ nav ul li a {
     .feature-btn {
         bottom: -70px;
     }
+
+    form {
+        padding: 30px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 80%;
+    }
+
+    footer {
+        margin: 0 40px 100px 40px;
+    }
 }
 
 /* Big tablet */
@@ -375,7 +436,16 @@ nav ul li a {
     .container {
         padding: 0 60px;
     }
+
     .grid-4-col, .grid-5-col {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 70%;
+    }
+    
+    footer {
+        margin: 0 60px 100px 60px;
     }
 }
